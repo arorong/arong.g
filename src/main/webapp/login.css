@@ -1,0 +1,186 @@
+/*회원정보관련 일괄적용*/
+*{text-decoration:none;}
+a{color: black;}
+.wrap {
+   width: 700px;
+   max-width: 100%;
+   margin: 0 auto;
+   background-color: white;
+   height: auto;
+/*    border: 1px solid #ccc; */
+   padding: 50px;
+   box-sizing: border-box;
+   position: relative;
+   margin-top:30px;
+}
+.wrapSign {
+   width: 700px;
+   max-width: 100%;
+   margin: 0 auto;
+   background-color: white;
+   height: auto;
+   border: 1px solid #ccc;
+   padding: 50px;
+   box-sizing: border-box;
+   position: relative;
+   margin-top:30px;
+   margin-bottom:30px;
+}
+
+table {
+   width: 100%;
+   max-width: 100%;
+   border-collapse: collapse;
+}
+
+td {
+   width: 100px;
+   padding: 15px;
+   border-bottom: 1px solid #ccc;
+}
+
+tr {
+   text-align: center;
+}
+
+input {
+   height: 35px;
+   width: 100%;
+   border: none;
+   box-sizing: border-box;
+}
+
+input:hover {
+/*    border-bottom: 1px solid #D7B997; */
+   border-bottom: 1px solid #ccc;
+}
+
+input:focus {
+   outline: none;
+}
+/*버튼관련 설정*
+input - 아이디 중복체크, 전화번호 중복체크, 우편번호 찾기
+button - 뒤로가기, 가입하기, 다시작성*/
+input[type="button"], button, #submit1 {
+   width: 150px;
+   height: 35px;
+   border: none;
+   /*     border-radius: 5px; */
+   text-align: center;
+   background-color: #000;
+   color: white;
+   align-items: center;
+}
+
+/*버튼 hover*/
+input:hover[type="button"], button:hover, input:hover[type="submit"] {
+   background-color: #D7B997;
+   color: black; 
+   border: none;
+}
+
+
+h1, h2, h3 {
+   font-size: x-large;
+   text-align: center;
+}
+
+.btnwrap {
+   display: flex;
+   align-items: center;
+   margin: 15px;
+}
+
+.menu_btn {
+   margin: 0 auto;
+}
+
+/*search 칸*/
+select {
+   height: 35px;
+   width: 150px;
+}
+
+input[type="search"] {
+   width: 45%;
+   border-bottom: 1px solid #ccc;
+       margin: 0px 5px 0 0;
+}
+
+.search1 {
+   width: 20%;
+   background-color: #000;
+   color: white;
+}
+
+textarea {
+   resize: none;
+   width: 40vw;
+   height: 18vh;
+}
+
+.atag {
+    display: flex;
+    justify-content: center
+}
+
+.atag>a {
+      text-decoration: none;
+}
+
+#atag_admin {
+    display: flex;
+    font-size: 13px;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    text-decoration: none;
+	border:1px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#atag_admin:hover{
+	background-color:#d7b997
+}
+#hidenarea {
+   visibility: hidden;
+   padding: 0px;
+   margin: 0px;
+}
+
+.a>img, .wrap>img, .wrapSign>img {
+   position: relative;
+   width: 70px;
+   left: 30px;
+}
+
+.tooltip {
+     position: relative;
+}
+.tooltip .tooltiptext {
+   visibility: hidden;       /* 이벤트가 없으면 툴팁 영역을 숨김 */
+   width: 300px;             /* 툴팁 영역의 넓이를 설정 */
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+   top:50px;
+   position: absolute; 
+   z-index: 1;
+   left: 60px;
+ }
+   
+.tooltip:hover .tooltiptext {
+   visibility: visible;      /* hover 이벤트 발생시 영역을 보여줌 */
+  }
+.tooltip>img{
+width:20px;
+vertical-align: middle;
+}
+
